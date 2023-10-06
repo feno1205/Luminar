@@ -4,41 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./luminar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand text-ldark" href="#"><img src="./images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active text-dark" aria-current="page" href="#">HOME</a>
-                  </li>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand text-dark" href="#"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">COURSES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">OUR PLACEMENTS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">GALLERY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark">CONTACT</a>
-                  </li>
-            </ul>
+                      <a class="nav-link active text-dark" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark">COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark">OUR PLACEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark">CONTACT</a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img class="img" src="./images/cover1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1>Kerala's No.1 IT Finishing School <br>
+                100% Placement Assistance</h1>
+              <p>We at LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like BIG DATA, Data Science, Machine Learning, PYTHON, Software Testing.</p>
+              <div>
+                <button class="button">VIEW COURSES</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img class="img" src="./images/cover2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1>Data Science, ML & AI <br>
+                Big Data - Hadoop & Spark <br>
+                Python Data Science</h1>
+              <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like Big Data, Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.</p>
+              <div>
+                <button class="button">VIEW COURSES</button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="buttonmodal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Get Training Quote for free
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <h1 class="heading">Get Training Quote for free</h1>
+                <input class="form" type="text" name="name" placeholder="Name" required>
+                <input class="form" type="email" name="email" placeholder="Email" required>
+                <input class="form" type="tel" name="phone" placeholder="Phone Number" required>
+                <select class="form" name="course" id="">
+                  <option selected="true" disabled="disabled">Select Course interested in</option>
+                  <option>Data Science - ML - AI - Big Data with Cloud &amp; Tableau</option>
+                  <option>Python Django - Angular- Full Stack Web Development Expert</option>
+                  <option>Software Testing Specialist</option>
+                  <option>MEARN Stack Web Development Expert - Angular &amp; React</option>
+                  <option>Business Analytics - Power BI &amp; Tableau</option>
+                  <option>Android Developer Expert Training In Kochi- Flutter</option>
+                  <option>PYTHON -DATA SCIENCE with ML - AI - &amp; TABLEAU</option>
+                </select>
+                <input class="form" type="text" name="city" placeholder="City" required>
+                <textarea class="form" name="comments" id="" cols="30" rows="5" placeholder="Comments"></textarea>
+                <div>
+                  <button type="button" class="buttonsubmit">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

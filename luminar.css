@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital@1&family=Crimson+Text:ital,wght@0,600;1,400&family=Dancing+Script:wght@400;700&family=Gloock&family=Kanit:wght@500&family=Lato:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Lobster&family=Montserrat:wght@700&family=Mulish:wght@600&family=Poppins:wght@500&family=Roboto+Slab:wght@900&display=swap');
+html{
+    background-color: black;
+}
+.img{
+    height: 550px;
+    width: 100%;
+    filter: brightness(50%);
+}
+.carousel h1{
+    font-size: 60px;
+    text-align: left;
+    margin-left: 150px;
+    font-family: 'Mulish', sans-serif;
+}
+.carousel p{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 150px;
+    font-family: 'Mulish', sans-serif;
+}
+.button{
+    padding: 20px 50px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #5e068a;
+    color: #fff;
+    display: block;
+    margin-left: 150px;
+    border: 0cm;
+    font-family: 'Montserrat', sans-serif;
+}
+.buttonmodal{
+    background-color: #5e068a;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+.modal-content{
+    padding: 50px;
+    width: 1200px;
+    height: 600px;
+}
+.btn-close{
+    margin-left: 380px;
+    margin-top: px;
+}
+.heading{
+    font-size: 28px;
+    color: #434343;
+    font-family: 'Mulish', sans-serif;
+}
+.buttonsubmit{
+    background-color: #5e068a;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+.modal-body{
+    padding: 15px;
+}
+input,textarea,select{
+    outline: hidden;
+    color: #434343;
+    border: white;
+    width: 350px;
+    padding: 10px;
+    font-family: 'Mulish', sans-serif;
+    border-bottom: #4343431e 2px solid;
+}
+@media(max-width:800px){
+    .img{
+        height: 300px;
+        text-align: center;
+    }
+    .carousel h1{
+        font-size: 16px;
+        margin-left: 5px;
+        color: #fff;
+    }
+    .carousel p{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .button{
+        margin-left: 5px;
+        padding: 15px 25px;
+        font-size: 12px;
+    }
+    .modal-content{
+        width: 400px;
+        padding: 20px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+    input,textarea,select{
+        width: 300px;
+    }
+    .btn-close{
+        margin-left: 300px;
+    }
+    .buttonsubmit{
+        padding: 10px 20px;
+    }
+}
